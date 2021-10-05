@@ -1,3 +1,11 @@
+@media print {
+    .pub{
+        display: none;
+    }
+    .image * {
+        display: none;
+    }  
+}
 html, body {
     margin: 0px;
     background-color: #dbdac4;
@@ -28,6 +36,11 @@ header {
 }
 header h1 {
     margin-bottom: 0px;
+}
+@media not print {
+    header h2 {
+        display: none;
+    }
 }
 
 article {
